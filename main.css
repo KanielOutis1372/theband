@@ -1,7 +1,14 @@
 /* header navbar */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     background-color: #000 !important;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .nav-link {
@@ -11,6 +18,7 @@
 .nav-item:hover {
     background: #ccc;
 }
+
 .nav-link:hover {
     color: #000 !important;
 }
@@ -22,10 +30,11 @@
 }
 
 .dropdown-menu {
-   border: 0;
-   border-radius: 0 !important;
-   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0;
+    border-radius: 0 !important;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .btn-search {
     height: 40px !important;
 }
@@ -35,20 +44,134 @@
     outline: none !important;
 }
 
+@media (max-width: 576px) {
+    .boxcontent-img {
+        width: 100% !important;
+    }
+
+    .boxcontent__member img {
+        max-width: 60% !important;
+        height: auto !important;
+    }
+}
+
 /* theband content */
-.theband h4, .description {
+.boxcontent {
+    max-width: 780px;
+}
+
+.boxcontent h4 {
+    letter-spacing: 0.4rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.boxcontent h4,
+.boxcontent__slogan {
     text-align: center;
 }
 
-.description {
+.boxcontent .boxcontent__description {
+    text-align: justify;
+}
+
+.boxcontent__slogan {
     font-style: italic;
     opacity: 0.7;
 }
 
-.theband img {
+.boxcontent img {
     max-width: 152px;
     margin-bottom: 10px;
     border-radius: 6px;
 }
 
+.boxcontent__member {
+    margin-bottom: 6rem;
+}
 
+/* tourdate content */
+.boxtourdate {
+    background-color: #000;
+    color: white;
+}
+
+.boxtourdate .boxcontent {
+    margin-top: 80px !important;
+    margin-bottom: 100px !important;
+}
+
+.box-ticker {
+    border-bottom: 1px solid #e0dddd;
+}
+
+.boxcontent__timeline {
+    opacity: 0.7;
+}
+
+.card {
+    width: 240px !important;
+    max-width: 100%;
+    border-radius: 0;
+    color: #000;
+    margin: auto;
+}
+
+.card-img-top {
+    border-radius: 0 !important;
+    max-width: 100% !important;
+}
+
+.card-img-top:hover {
+    opacity: 0.8;
+}
+
+.card a:hover {
+    opacity: 0.6;
+}
+
+/* @media (max-width: 576px) {
+    .card {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 10px;
+    }
+} */
+
+@media (max-width: 576px) {
+    .card {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* contact content */
+.contact {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.btn-submit {
+    float: right;
+}
+
+/* map */
+.map {
+    width: 100%;
+}
+
+.footer {
+    margin-bottom: 4rem;
+}
+
+.footer .row {
+    width: 100%;
+}
+
+.footer i {
+    font-size: 1.5rem;
+}
+
+.footer i:hover {
+    opacity: 0.7;
+}

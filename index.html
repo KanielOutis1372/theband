@@ -34,16 +34,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item px-2">
-          <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link" href="#">BAND<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#band">BAND<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link" href="#">TOUR<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#tour">TOUR<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link" href="#">CONTACT<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#contact">CONTACT<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item px-2 dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -68,7 +68,7 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
     </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner" id="home">
       <div class="carousel-item active">
         <img class="d-block w-100" src="/assets/imgs/chicago.jpg" alt="First slide" />
         <div class="carousel-caption d-none d-md-block">
@@ -102,42 +102,158 @@
   </div>
 
   <!-- body -->
-  <div class="container theband my-5">
+  <!-- theband -->
+  <div class="container boxcontent theband mt-5" id="band">
     <h4>THE BAND</h4>
-    <p class="description">We love music</p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eaque
-      tenetur voluptatem, et dolor ratione! Aliquam illo veniam dolorem iure
-      maxime, repudiandae suscipit? Iusto sint reprehenderit assumenda earum,
-      ipsam explicabo ut at repellendus exercitationem sequi tempore alias
-      voluptas amet eaque consequuntur, similique officia qui! Error dolorum
-      quam ut porro! Obcaecati vitae eius praesentium? Et quam, perspiciatis
-      pariatur ipsa ratione veniam, dolor, officia tenetur sapiente eos eius
-      animi odit earum dolore reiciendis architecto? Vitae neque repudiandae
-      molestias, amet blanditiis doloremque reiciendis rem atque facilis unde
-      ipsum libero nemo at odio est quod veniam nihil deserunt tenetur quis
-      tempore sint hic iusto?
+    <p class="boxcontent__slogan mt-4">We love music</p>
+    <p class="boxcontent__description">
+      We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
     </p>
-    <div class="container-fluid my-5">
+    <div class="container-fluid boxcontent__member mt-5">
       <div class="row">
-        <div class="col-sm-4 text-center">
+        <div class="col-sm-4 text-center boxcontent-img">
           <p>Name</p>
           <img src="/assets/imgs/bandmember.jpg" alt="bandmember">
         </div>
-        <div class="col-sm-4 text-center">
+        <div class="col-sm-4 text-center boxcontent-img">
           <p>Name</p>
           <img src="/assets/imgs/bandmember.jpg" alt="bandmember">
         </div>
-        <div class="col-sm-4 text-center">
+        <div class="col-sm-4 text-center boxcontent-img">
           <p>Name</p>
           <img src="/assets/imgs/bandmember.jpg" alt="bandmember">
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- tour dates -->
+  <div class="boxtourdate py-4" id="tour">
+    <div class="container boxcontent">
+      <h4>TOUR DATES</h4>
+      <p class="boxcontent__slogan my-4">Remember to book your tickets!</p>
+      <div class="d-flex p-2 bg-light text-white border-bottom-2 box-ticker">
+        <div class="p-2 pr-4 text-dark boxcontent__timeline">September</div>
+        <div class="py-2 px-3 bg-danger">Sold out</div>
+      </div>
+      <div class="d-flex p-2 bg-light text-white border-bottom-2 box-ticker">
+        <div class="p-2 pr-4 text-dark boxcontent__timeline">October</div>
+        <div class="py-2 px-3 bg-danger">Sold out</div>
+      </div>
+      <div class="d-flex justify-content-between p-2 bg-light text-white border-bottom-2 box-ticker">
+        <div class="p-2 pr-4 text-dark boxcontent__timeline">November</div>
+        <div class="py-2 px-3 bg-dark rounded-circle mr-4">3</div>
+      </div>
+
+      <div class="ticket-container d-flex justify-content-between flex-wrap">
+        <div class="card my-4">
+          <img class="card-img-top" src="/assets/imgs/newyork.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-time">Fri 27 Nov 2016</p>
+            <p class="card-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <a href="#" class="btn btn-dark">Buy Tickets</a>
+          </div>
+        </div>
+        <div class="card my-4">
+          <img class="card-img-top" src="/assets/imgs/paris.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-time">Sat 28 Nov 2016</p>
+            <p class="card-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <a href="#" class="btn btn-dark">Buy Tickets</a>
+          </div>
+        </div>
+        <div class="card my-4">
+          <img class="card-img-top" src="/assets/imgs/sanfran.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">San Fransico</h5>
+            <p class="card-time">Sun 29 Nov 2016</p>
+            <p class="card-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <a href="#" class="btn btn-dark">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- footer -->
+  <div class="container boxcontent contact" id="contact">
+    <h4>CONTACT</h4>
+    <p class="boxcontent__slogan mt-4">Fan? Drop a note!</p>
+    <div class="container-fluid mt-5 px-0">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="information">
+            <div class="container-fluid px-0">
+              <div class="row">
+                <div class="col-1">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="col-11">
+                  <p>Chicago, US</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="col-11">
+                  <p>Phone: +00 151515</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="col-11">
+                  <p>Email: mail@mail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <form class="container px-0">
+            <div class="form-group container px-0">
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+                </div>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Message">
+            </div>
+            <button type="submit" class="btn btn-dark btn-submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- map -->
+  <img class="map mb-5" src="/assets/imgs/map.jpg" alt="" srcset="">
+
+  <div class="container footer">
+    <div class="row py-2 d-flex justify-content-center">
+      <i class="px-2 fa-brands fa-facebook"></i>
+      <i class="px-2 fa-brands fa-square-instagram"></i>
+      <i class="px-2 fa-brands fa-twitter"></i>
+      <i class="px-2 fa-brands fa-linkedin"></i>
+    </div>
+    <div class="row py-2 d-flex justify-content-center">
+      <p>Powered by <a href="#">w3.css</a></p>
+    </div>
+  </div>
 
   <!-- main js -->
   <script src="main.js"></script>
